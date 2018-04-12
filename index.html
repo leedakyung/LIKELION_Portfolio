@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>dakyung</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var jbOffset = $('#nav').offset();
+            $(window).scroll(function(){
+                if($(document).scrollTop() > jbOffset.top){
+                    $('#nav').addClass('fixed_nav')
+                }
+                else{
+                    $('#nav').removeClass('fixed_nav')
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="section">
+        <div id="header" class="container">
+            <h1>DAKYUNG LEE</h1>
+            <!-- hr -->
+            <h4>&#x1F493;</h4>
+        </div>
+    </div>
+
+    <div class="section">
+        <div id="nav" class="container">
+            <ul>
+                <li><a href="#introduce">ABOUT ME</a></li>
+                <li><a href="#skills">MY SKILLS</a></li>
+                <li><a href="#experience">MY WORKS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div id="introduce" class="container">
+            <h2>/ ABOUT ME /</h2>
+            <!-- <hr> -->
+            <div id="introduce_grid">
+                <div>
+                    <img src="kang.jpg" style="height: 250px; margin-right:50px;" alt="강동원이 없다">
+                </div>
+                <div>
+                    <p id="text">
+                        <strong>LEE DAKYUNG, 1996.05.22</strong> <br><br><br>
+                        PUKYONG NAT'L UNIV.<br><br>
+                        - GRAPHIC ART ENGINEERING <br><br>
+                        - COMPUTER ENGINEERING <br><br><br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div id="skills" class="container">
+            <h2>/ MY SKILLS /</h2> <br><br>
+            <!-- <hr> -->
+            <div id="skills_content"> 
+                    <br><br>
+                    <!-- <p>&#x25FD; 2018 상반기 <br>
+                        - C <br>
+                        - RubyOnRails <br>
+                        - JS <br>
+                    </p>
+                    <p>&#x25FD; 2018 하반기 <br>
+                        - C++ <br>
+                        - JAVA <br>    
+                    </p>
+                    <p> 2019 ~ </p> -->
+                <div class="col-1-3">
+                    <p>[ 2018 상반기 ]
+                        <br><br>
+                        C <br>
+                        RubyOnRails <br>
+                        JS <br>
+                    </p>
+                </div>
+                <div class="col-1-3">
+                    <p>[ 2018 하반기 ]
+                        <br><br>
+                        C++ <br>
+                        JAVA <br>
+                    </p>
+                </div>
+                <div class="col-1-3">
+                    <p>[ 2019 ~ ]
+                        <br><br>
+                    </p> 
+                </div>
+            </div>
+
+    <div class="section">
+        <div id="experience" class="container">
+            <h2>/ MY WORKS /</h2>
+            <!-- <hr> -->
+            <div>
+                <!-- <span>
+                    &bull;혼밥 &bull;혼영 &bull;혼쇼
+                </span> -->
+                <div id="experience_content">
+                   <br><br>멋쟁이 사자처럼 at KSU, 2018
+                </div>
+                <!-- <div id="company">
+                    <h4>회사 : 
+                        <a 
+                        href="http://www.naver.com">들어갈 수 있을까
+                        </a>
+                    </h4> 
+                    <h4>기간 : 2018. 3 ~ 2018. 12</h4>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div id="contact" class="container">
+            <!-- div로 트랜지션먹인부분임 -->
+            <div class="transition"> 
+                <h2>/ CONTACT /</h2>
+            </div>
+           
+            <!-- <hr> -->
+            
+            <div class="call">
+                <!-- <a href="mailto:dakyung_is@likelion.org">dakyung_is@likelion.org</a></p> -->
+                <br><br>
+                <p>&#x25FD; dakyung_is@likelion.org</p>
+                <p>&#x25FD; 010 - 0000 - 0000</p>
+                <p>&#x25FD; INSTAGRAM @@@@@@@@ </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
